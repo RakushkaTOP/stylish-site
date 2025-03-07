@@ -1,0 +1,50 @@
+---
+description: обьязательно почитй правила чт нужно учитывть при рабте с MCP
+globs: 
+alwaysApply: true
+---
+# Доступные MCP-инструменты
+
+Судя по скриншоту, у тебя есть доступ к следующим MCP (Model Control Protocol) инструментам:
+
+## 1. Brave-Search
+- **Инструменты**: brave_web_search, brave_local_search
+- **Назначение**: Поиск информации в интернете и локально через Brave
+
+## 2. Sequential-Thinking
+- **Инструменты**: sequentialthinking
+- **Назначение**: Последовательное мышление для решения сложных задач
+
+## 3. Browser-Agent
+- **Инструменты**: 
+  - getConsoleLogs
+  - getConsoleErrors
+  - getNetworkErrorLogs
+  - getNetworkSuccessLogs
+  - takeScreenshot
+  - getSelectedElement
+  - wipeLogs
+- **Назначение**: Взаимодействие с браузером, получение логов, скриншотов и элементов
+
+## 4. GitHub
+- **Инструменты**:
+  - create_or_update_file
+  - search_repositories
+  - create_repository
+  - get_file_contents
+  - push_files
+  - create_issue
+  - create_pull_request
+  - fork_repository
+  - create_branch
+  - list_commits
+  - list_issues
+  - update_issue
+  - add_issue_comment
+  - search_code
+  - search_issues
+  - search_users
+  - get_issue
+- **Назначение**: Полноценная работа с GitHub - создание репозиториев, веток, коммитов, PR, работа с issues и т.д.
+
+Эти инструменты позволяют мне выполнять различные действия от поиска информации до взаимодействия с браузером и GitHub. Для более эффективного использования MCP стоит учитывать возможности каждого инструмента при формулировании задач.
