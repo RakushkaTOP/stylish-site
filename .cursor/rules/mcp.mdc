@@ -5,46 +5,55 @@ alwaysApply: true
 ---
 # Доступные MCP-инструменты
 
-Судя по скриншоту, у тебя есть доступ к следующим MCP (Model Control Protocol) инструментам:
+В проекте настроены следующие MCP (Model Control Protocol) инструменты:
 
 ## 1. Brave-Search
-- **Инструменты**: brave_web_search, brave_local_search
-- **Назначение**: Поиск информации в интернете и локально через Brave
+- **Инструменты**: 
+  - `brave_web_search` - Поиск в интернете через Brave
+  - `brave_local_search` - Локальный поиск через Brave
+- **Команда**: `C:\Windows\System32\cmd.exe /c npx -y @smithery/cli@latest run @smithery-ai/brave-search --config "{\"braveApiKey\":\"\"}"`
 
 ## 2. Sequential-Thinking
-- **Инструменты**: sequentialthinking
-- **Назначение**: Последовательное мышление для решения сложных задач
+- **Инструменты**: 
+  - `sequentialthinking` - Последовательное мышление для решения сложных задач
+- **Команда**: `C:\Windows\System32\cmd.exe /c npx -y @smithery/cli@latest run @smithery-ai/server-sequential-thinking --config "{}"`
 
 ## 3. Browser-Agent
 - **Инструменты**: 
-  - getConsoleLogs
-  - getConsoleErrors
-  - getNetworkErrorLogs
-  - getNetworkSuccessLogs
-  - takeScreenshot
-  - getSelectedElement
-  - wipeLogs
-- **Назначение**: Взаимодействие с браузером, получение логов, скриншотов и элементов
+  - `getConsoleLogs` - Получение логов консоли браузера
+  - `getConsoleErrors` - Получение ошибок консоли браузера
+  - `getNetworkErrorLogs` - Получение логов сетевых ошибок
+  - `getNetworkSuccessLogs` - Получение логов успешных сетевых запросов
+  - `takeScreenshot` - Создание скриншота текущей страницы
+  - `getSelectedElement` - Получение выбранного элемента
+  - `wipeLogs` - Очистка логов браузера
+- **Команда**: `C:\Windows\System32\cmd.exe /B /c npx @agentdesk.ai/browser-tools-mcp@1.1.0`
 
 ## 4. GitHub
 - **Инструменты**:
-  - create_or_update_file
-  - search_repositories
-  - create_repository
-  - get_file_contents
-  - push_files
-  - create_issue
-  - create_pull_request
-  - fork_repository
-  - create_branch
-  - list_commits
-  - list_issues
-  - update_issue
-  - add_issue_comment
-  - search_code
-  - search_issues
-  - search_users
-  - get_issue
-- **Назначение**: Полноценная работа с GitHub - создание репозиториев, веток, коммитов, PR, работа с issues и т.д.
+  - `create_or_update_file` - Создание или обновление файла
+  - `search_repositories` - Поиск репозиториев
+  - `create_repository` - Создание репозитория
+  - `get_file_contents` - Получение содержимого файла
+  - `push_files` - Загрузка нескольких файлов
+  - `create_issue` - Создание issue
+  - `create_pull_request` - Создание pull request
+  - `fork_repository` - Форк репозитория
+  - `create_branch` - Создание ветки
+  - `list_commits` - Список коммитов
+  - `list_issues` - Список issues
+  - `update_issue` - Обновление issue
+  - `add_issue_comment` - Добавление комментария к issue
+  - `search_code` - Поиск кода
+  - `search_issues` - Поиск issues
+  - `search_users` - Поиск пользователей
+  - `get_issue` - Получение информации об issue
+- **Команда**: `C:\Windows\System32\cmd.exe /c npx -y @modelcontextprotocol/server-github --config "{\"githubPersonalAccessToken\":\"...\"...}"`
 
-Эти инструменты позволяют мне выполнять различные действия от поиска информации до взаимодействия с браузером и GitHub. Для более эффективного использования MCP стоит учитывать возможности каждого инструмента при формулировании задач.
+## Использование в проекте Minecraft Fan Zone
+
+Эти инструменты MCP могут быть использованы для:
+1. Поиска дополнительной информации о Minecraft через Brave
+2. Отладки 3D-куба на заднем фоне с помощью Browser-Agent
+3. Управления GitHub-репозиторием проекта
+4. Решения сложных проблем с рендерингом с помощью Sequential-Thinking 

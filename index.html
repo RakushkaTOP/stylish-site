@@ -3,132 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minecraft Fan Zone</title>
-    <link href="https://fonts.googleapis.com/css2?family=Minecraft&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>Мой Стильный Сайт</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="minecraft-cube"></div>
-    
-    <div class="container">
-        <header>
-            <div class="logo">
-                <h1>Minecraft Fan Zone</h1>
-            </div>
+    <header>
+        <div class="container">
             <nav>
-                <ul>
-                    <li><a href="#about">О Minecraft</a></li>
-                    <li><a href="#updates">Обновления</a></li>
-                    <li><a href="#mods">Моды</a></li>
-                    <li><a href="#gallery">Галерея</a></li>
-                    <li><a href="#community">Сообщество</a></li>
+                <div class="logo">ЛОГО</div>
+                <ul class="menu">
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#portfolio">Портфолио</a></li>
+                    <li><a href="#contact">Контакты</a></li>
                 </ul>
             </nav>
-        </header>
+        </div>
+    </header>
 
-        <main>
-            <section id="hero">
-                <h2>Добро пожаловать в мир кубических приключений!</h2>
-                <p>Сайт создан фанатами для фанатов легендарной игры Minecraft</p>
-                <button class="minecraft-button">Присоединиться</button>
-            </section>
-
-            <section id="about">
-                <h2>О Minecraft</h2>
-                <div class="info-block">
-                    <div class="info-text">
-                        <p>Minecraft — это игра-песочница, разработанная Маркусом Перссоном (Notch) и в дальнейшем Mojang Studios. Игра предоставляет игрокам возможность создавать и разрушать различные блоки в трёхмерном мире. Игра включает в себя несколько режимов, включая режим выживания, где игроку необходимо добывать ресурсы и поддерживать своё здоровье, и творческий режим, где игроки имеют неограниченный доступ ко всем ресурсам и возможностям игры.</p>
-                        <p>С момента своего появления в 2009 году, Minecraft стала одной из самых продаваемых игр всех времён с более чем 200 миллионами проданных копий.</p>
-                    </div>
-                    <div class="info-image">
-                        <img src="https://www.minecraft.net/content/dam/games/minecraft/key-art/MC_2021_Updates_Keyart_1920x1080.jpg" alt="Minecraft World">
-                    </div>
-                </div>
-            </section>
-
-            <section id="updates">
-                <h2>Последние обновления</h2>
-                <div class="updates-grid">
-                    <div class="update-card">
-                        <div class="update-icon"></div>
-                        <h3>Caves & Cliffs Part II</h3>
-                        <p>Улучшенная генерация мира с впечатляющими горами и глубокими пещерами!</p>
-                    </div>
-                    <div class="update-card">
-                        <div class="update-icon"></div>
-                        <h3>Wild Update</h3>
-                        <p>Новый биом Глубокий Мрак, Варден и многое другое!</p>
-                    </div>
-                    <div class="update-card">
-                        <div class="update-icon"></div>
-                        <h3>Trails & Tales</h3>
-                        <p>Археология, верблюды и новые книги с историями!</p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="mods">
-                <h2>Популярные моды</h2>
-                <div class="mods-grid">
-                    <div class="mod-card">
-                        <h3>OptiFine</h3>
-                        <p>Улучшает графику и производительность игры</p>
-                    </div>
-                    <div class="mod-card">
-                        <h3>Biomes O' Plenty</h3>
-                        <p>Добавляет более 90 новых биомов и новые блоки</p>
-                    </div>
-                    <div class="mod-card">
-                        <h3>JourneyMap</h3>
-                        <p>Создаёт детальную карту исследованного мира</p>
-                    </div>
-                    <div class="mod-card">
-                        <h3>Applied Energistics 2</h3>
-                        <p>Продвинутая система хранения предметов</p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="gallery">
-                <h2>Галерея построек</h2>
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <img src="https://static.planetminecraft.com/files/resource_media/screenshot/1431/2014-07-30_1553088053861_lrg.jpg" alt="Средневековый замок">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="https://static.planetminecraft.com/files/resource_media/screenshot/1522/2015-05-30_1517309204699_lrg.jpg" alt="Современный город">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="https://static.planetminecraft.com/files/resource_media/screenshot/1232/2012-08-08_204608_3210143.jpg" alt="Фэнтези мир">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="https://static.planetminecraft.com/files/resource_media/screenshot/1445/2014-11-07_1334318313189_lrg.jpg" alt="Подводный дом">
-                    </div>
-                </div>
-            </section>
-
-            <section id="community">
-                <h2>Наше сообщество</h2>
-                <div class="community-block">
-                    <p>Присоединяйтесь к нашему дружному сообществу любителей Minecraft! Делитесь своими постройками, историями и приключениями.</p>
-                    <div class="social-links">
-                        <a href="#" class="social-button discord">Discord</a>
-                        <a href="#" class="social-button youtube">YouTube</a>
-                        <a href="#" class="social-button reddit">Reddit</a>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <div class="footer-content">
-                <p>&copy; 2023 Minecraft Fan Zone. Этот сайт не связан с Mojang или Microsoft.</p>
-                <p>Minecraft является товарным знаком Mojang Synergies AB</p>
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Добро пожаловать на наш сайт</h1>
+                <p>Создаем уникальные цифровые решения для вашего бизнеса</p>
+                <button class="btn-primary">Начать сейчас</button>
             </div>
-        </footer>
-    </div>
+            <div class="hero-image">
+                <div class="shape"></div>
+            </div>
+        </div>
+    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+    <section id="about" class="about">
+        <div class="container">
+            <h2>О нас</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Мы - молодая и динамичная команда профессионалов, которая стремится создавать качественные и инновационные решения.</p>
+                    <p>Наши проекты отличаются креативным подходом, вниманием к деталям и высоким качеством исполнения.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h3>5+</h3>
+                        <p>Лет опыта</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>100+</h3>
+                        <p>Проектов</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>50+</h3>
+                        <p>Клиентов</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Наши услуги</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🌐</div>
+                    <h3>Веб-разработка</h3>
+                    <p>Создание современных и адаптивных веб-сайтов, интернет-магазинов и веб-приложений.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Мобильные приложения</h3>
+                    <p>Разработка мобильных приложений для iOS и Android с интуитивным и приятным интерфейсом.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>Дизайн</h3>
+                    <p>Разработка уникального дизайна для вашего проекта, включая логотипы, брендинг и UI/UX дизайн.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>SEO-оптимизация</h3>
+                    <p>Повышение видимости вашего сайта в поисковых системах и увеличение целевого трафика.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Наше портфолио</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image"></div>
+                    <h3>Проект 1</h3>
+                    <p>Корпоративный сайт для компании в сфере финансов</p>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image"></div>
+                    <h3>Проект 2</h3>
+                    <p>Интернет-магазин электроники</p>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image"></div>
+                    <h3>Проект 3</h3>
+                    <p>Мобильное приложение для фитнеса</p>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image"></div>
+                    <h3>Проект 4</h3>
+                    <p>Лендинг для образовательного проекта</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Связаться с нами</h2>
+            <div class="contact-container">
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Имя</label>
+                            <input type="text" id="name" placeholder="Ваше имя">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Ваш email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Сообщение</label>
+                            <textarea id="message" placeholder="Ваше сообщение"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Отправить</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h4>Адрес</h4>
+                        <p>г. Москва, ул. Примерная, д. 123</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>Телефон</h4>
+                        <p>+7 (123) 456-78-90</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>Email</h4>
+                        <p>info@mysite.ru</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">ЛОГО</div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#portfolio">Портфолио</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-icon">FB</a>
+                    <a href="#" class="social-icon">IG</a>
+                    <a href="#" class="social-icon">TW</a>
+                    <a href="#" class="social-icon">VK</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Мой Стильный Сайт. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html> 
